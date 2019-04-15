@@ -5,7 +5,7 @@ pipeline {
         #python 'python3.6'
     #}
   parameters {
-    string(name: 'repo_branch', defaultValue: 'development', description: 'The branch to be checked out')
+    	string(name: 'repo_branch', defaultValue: 'master', description: 'The branch to be checked out')
 	string(name: 'git_repo',  defaultValue: 'ssh://git@my-server.com/arm.git' description: 'Git repository from where we are going to checkout the code')
 	}
   options {
